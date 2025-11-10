@@ -1,0 +1,10 @@
+const express = require('express');
+const { signup, login, searchUsers, followUser, unfollowUser } = require('../controllers/authController');
+const { protect } = require('../middleware/authMiddleware');
+const router = express.Router();
+router.post('/signup', signup);
+router.post('/login', login);
+router.get('/users/search', searchUsers);
+router.post('/users/:id/follow', protect, followUser);
+router.post('/users/:id/unfollow', protect, unfollowUser);
+module.exports = router;
