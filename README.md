@@ -1,73 +1,42 @@
-# Online Poster / Flyer Designer
+#  ATH Flyer — Online Poster & Flyer Designer
 
-A fullstack MERN app for designing posters and flyers online with authentication.
+PosterCraft is a **full-stack MERN application** that allows users to design, customize, and download digital posters or flyers.  
+It includes secure user authentication and a simple, interactive design workspace (features under development).
 
-## Features
-- User signup/login with JWT authentication
-- Protected routes
-- Poster/Flyer design tools (to be added)
+---
 
-## Prerequisites
-- Node.js and npm installed
-- MongoDB installed and running (or MongoDB Atlas connection string)
+##  Features
 
-## Quick Start
+-  **User Authentication** — Signup/Login using JWT tokens  
+-  **Protected Routes** — Secure endpoints for authenticated users only  
+-  **Poster Builder** — (Upcoming) Add text, colors, and templates  
+-  **Database Integration** — MongoDB for storing user data and saved designs  
+-  **Fast Frontend** — Built with React and Vite for blazing-fast performance  
 
-### Backend Setup
+---
+
+##  Tech Stack
+
+**Frontend:** React, Vite, Axios, Context API  
+**Backend:** Node.js, Express.js, MongoDB, Mongoose  
+**Authentication:** JSON Web Tokens (JWT)  
+**Version Control:** Git + GitHub  
+
+---
+
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) and npm
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas)
+
+---
+
+## 🛠️ Quick Start
+
+### 🔹 Backend Setup
 
 1. Navigate to the backend directory:
    ```bash
    cd backend
-   ```
 
-2. The `.env` file has been created with default values. If you need to modify it:
-   - `PORT=5000` - Backend server port
-   - `MONGO_URI=mongodb://localhost:27017/flyer` - MongoDB connection string
-   - `JWT_SECRET=your-secret-key-change-this-in-production` - JWT secret key
-
-3. Install dependencies (already done):
-   ```bash
-   npm install
-   ```
-
-4. Start the backend server:
-   ```bash
-   npm start
-   ```
-   
-   Or for development with auto-reload:
-   ```bash
-   npm run dev
-   ```
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies (already done):
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## Running the Project
-
-1. **Make sure MongoDB is running** (or have your MongoDB Atlas connection string ready)
-2. **Start the backend server** (runs on port 5000)
-3. **Start the frontend server** (runs on port 5173 by default with Vite)
-4. **Open your browser** to http://localhost:5173
-
-## Troubleshooting
-
-- **MongoDB Connection Error**: Make sure MongoDB is running or update the `MONGO_URI` in `backend/.env`
-- **Port Already in Use**: Change the `PORT` in `backend/.env` or stop the process using that port
-- **CORS Errors**: Check that the backend is running and the frontend proxy is configured correctly
-
-For more detailed setup instructions, see [SETUP.md](./SETUP.md)
